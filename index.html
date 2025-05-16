@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas IT Solutions</title>
+    <style>
+        /* Simple, clean styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .hero {
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card h3 {
+            color: #0056b3;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Atlas</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>IT Solutions for Modern Business</h1>
+            <p>Hardware, software, and comprehensive IT services to power your business</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We provide end-to-end IT solutions designed to meet your business needs.</p>
+            
+            <div class="services">
+                <div class="service-card">
+                    <h3>Hardware Solutions</h3>
+                    <p>Complete hardware infrastructure design and implementation.</p>
+                    <ul>
+                        <li>Server infrastructure</li>
+                        <li>Networking equipment</li>
+                        <li>Workstation setup</li>
+                        <li>Hardware maintenance</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Software Solutions</h3>
+                    <p>Custom and commercial software to streamline your operations.</p>
+                    <ul>
+                        <li>Custom software development</li>
+                        <li>Software integration</li>
+                        <li>Software deployment</li>
+                        <li>Updates and maintenance</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>IT Support</h3>
+                    <p>Reliable IT support to keep your business running smoothly.</p>
+                    <ul>
+                        <li>Technical support</li>
+                        <li>Troubleshooting</li>
+                        <li>System maintenance</li>
+                        <li>IT consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to transform your IT infrastructure? Get in touch with our team today.</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> atlascapital.lsbs@gmail.com</p>
+                <p><strong>Phone:</strong> (712) 203-3133</p>
+                <p><strong>Address:</strong> 3133 Myrtle Street, Sioux City, 51103</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Atlas Capital, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
