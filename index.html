@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -304,10 +304,18 @@
   <header>
     <div class="nav-container">
       <div class="logo">
-        <!-- Triangle Icon -->
-        <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <!-- Enhanced Triangle Icon with Diagonal Lines -->
+        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <!-- Triangle -->
           <polygon points="15,5 5,25 25,25" fill="#8CB3C1" />
+
+          <!-- Diagonal Line 1 -->
+          <line x1="10" y1="15" x2="15" y2="20" stroke="white" stroke-width="1.5" opacity="0.6"/>
+
+          <!-- Diagonal Line 2 -->
+          <line x1="15" y1="20" x2="20" y2="15" stroke="white" stroke-width="1.5" opacity="0.6"/>
         </svg>
+
         <!-- Text -->
         <div class="logo-text">Atlas</div>
       </div>
@@ -322,7 +330,7 @@
           </ul>
         </nav>
         <button class="theme-toggle" onclick="toggleTheme()">
-          ☾
+          ☀️
         </button>
       </div>
     </div>
@@ -444,10 +452,19 @@
       const currentTheme = document.documentElement.getAttribute("data-theme");
       if (currentTheme === "dark") {
         document.documentElement.removeAttribute("data-theme");
+        document.querySelector('.theme-toggle').textContent = '☾';
       } else {
         document.documentElement.setAttribute("data-theme", "dark");
+        document.querySelector('.theme-toggle').textContent = '☀️';
       }
     }
+
+    // Update icon on load based on theme
+    window.addEventListener('DOMContentLoaded', () => {
+      const theme = document.documentElement.getAttribute("data-theme");
+      const btn = document.querySelector('.theme-toggle');
+      btn.textContent = theme === "dark" ? '☀️' : '☾';
+    });
   </script>
 
 </body>
